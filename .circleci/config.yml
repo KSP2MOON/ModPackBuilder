@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7.0
+    steps:
+      - checkout
+      - run:
+          name: Setting up virtualenv
+          command: make env
+      - run:
+          name: Building ModPack
+          command: make run
+      - run:
+          name: Package and Release to Github
+          command: |
+            KSP_VERSION=$(python -c 'import yaml,sys;print(yaml.safe_load(sys.stdin)["ksp_version"])' < packages.yaml)
+            MODPACK_VERSION=$(python -c 'import yaml,sys;print(yaml.safe_load(sys.stdin)["modpack_version"])' < packages.yaml)
+            FILENAME=ksp2moon-modpack-ksp${KSP_VERSION}-v${MODPACK_VERSION}.zip
+
+            (cd build && zip -r ${FILENAME} *)
+            ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${MODPACK_VERSION} build/${FILENAME}
+
