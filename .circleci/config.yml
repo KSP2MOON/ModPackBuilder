@@ -14,8 +14,8 @@ jobs:
       - run:
           name: Package and Release to Github
           command: |
-            KSP_VERSION=$(python -c 'import yaml,sys;print(yaml.safe_load(sys.stdin)["ksp_version"])' < packages.yaml)
-            MODPACK_VERSION=$(python -c 'import yaml,sys;print(yaml.safe_load(sys.stdin)["modpack_version"])' < packages.yaml)
+            KSP_VERSION=$(env/bin/python -c 'import yaml,sys;print(yaml.safe_load(sys.stdin)["ksp_version"])' < packages.yaml)
+            MODPACK_VERSION=$(env/bin/python -c 'import yaml,sys;print(yaml.safe_load(sys.stdin)["modpack_version"])' < packages.yaml)
             FILENAME=ksp2moon-modpack-ksp${KSP_VERSION}-v${MODPACK_VERSION}.zip
 
             (cd build && zip -r ${FILENAME} *)
