@@ -1,0 +1,4 @@
+PyYAML==3.13
+GitPython==2.1.11
+requests==2.19.1
+enlighten==1.0.7

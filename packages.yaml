@@ -1,0 +1,86 @@
+ksp_version: 1.3.1
+modpack_version: 0.1
+description: "The official KSP2MOON ModPack"
+
+packages:
+
+  # Dependencies for FerramAerospaceResearch
+  - type: ckan
+    identifier: ModuleManager
+  - type: ckan
+    identifier: ModularFlightIntegrator
+
+  # Dependencies for SolverEngines
+  - type: ckan
+    identifier: ModuleAnimateEmissive
+
+  # Dependencies for AdvancedJetEngine
+  - type: ckan
+    identifier: FerramAerospaceResearch
+  - type: ckan
+    identifier: SolverEngines
+
+  # Dependencies for RealFuels
+  - type: ckan
+    identifier: CommunityResourcePack
+
+  # Dependencies for RealPlume
+  - type: ckan
+    identifier: SmokeScreen
+
+  # Suggestion for RealPlume
+  - type: ckan
+    identifier: EngineLighting
+
+  # Dependencies for RealismOverhaul
+  - type: ckan
+    identifier: AdvancedJetEngine
+  - type: ckan
+    identifier: KerbalJointReinforcement
+  - type: ckan
+    identifier: RealChute
+  - type: ckan
+    identifier: RealFuels
+  - type: ckan
+    identifier: RealHeat
+  - type: ckan
+    identifier: RealPlume
+
+  # Main package
+  - type: ckan
+    identifier: RealismOverhaul
+
+  # Dependencies for ProceduralFairings-ForEverything
+  - type: ckan
+    identifier: FirespitterCore
+  - type: ckan
+    identifier: ProceduralFairings
+
+  # Dependencies for RealSolarSystem
+  - type: ckan
+    identifier: Kopernicus
+    # one of RSSTextures2048, RSSTextures4096, RSSTextures8192
+  - type: ckan
+    identifier: RSSTextures2048
+
+  # Dependencies for TACLS
+  - type: ckan
+    identifier: BackgroundResources
+
+  # Suggestions (partial) for RealismOverhaul
+  - type: ckan
+    identifier: ProceduralFairings-ForEverything
+  - type: ckan
+    identifier: ProceduralParts
+  - type: ckan
+    identifier: PersistentRotation
+  - type: ckan
+    identifier: RCSBuildAid
+  - type: ckan
+    identifier: RealSolarSystem
+  - type: ckan
+    identifier: RealismOverhaulCraftFiles
+  - type: ckan
+    identifier: RemoteTech
+  - type: ckan
+    identifier: TACLS
