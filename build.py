@@ -600,13 +600,12 @@ class PkgCKAN(Pkg):
             return rVersion == 'any' or (self.VersionParse(rVersion) >= kspVersionMin and self.VersionParse(rVersion) <= kspVersionMax)
         
         if rMin and rMax:
-            return kspVersionMin >= self.VersionParse(rMin) and kspVersionMax >= self.VersionParse(rMax)
+            return kspVersionMin >= self.VersionParse(rMin) and kspVersionMax <= self.VersionParse(rMax)
 
         if rMin and not rMax:
             return kspVersionMax >= self.VersionParse(rMin)
 
         if not rMin and rMax:
-            vMax = self.VersionParse(rMax)
             return kspVersionMin <= self.VersionParse(rMax)
 
         # from https://github.com/KSP-CKAN/CKAN/blob/master/Spec.md
