@@ -1,5 +1,5 @@
 ksp_version: 1.3.1
-modpack_version: 0.3
+modpack_version: 0.4
 description: "The official KSP2MOON ModPack"
 
 packages:
@@ -9,10 +9,6 @@ packages:
     identifier: ModuleManager
   - type: ckan
     identifier: ModularFlightIntegrator
-
-  # Dependencies for SolverEngines
-  # - type: ckan
-  #   identifier: ModuleAnimateEmissive
 
   # Dependencies for AdvancedJetEngine
   - type: ckan
@@ -27,10 +23,6 @@ packages:
   # Dependencies for RealPlume
   - type: ckan
     identifier: SmokeScreen
-
-  # Suggestion for RealPlume
-  # - type: ckan
-  #   identifier: EngineLighting
 
   # Dependencies for RealismOverhaul
   - type: ckan
@@ -56,6 +48,18 @@ packages:
   # - type: ckan
   #   identifier: ProceduralFairings
 
+  # Dependencies for CryoTanks
+  - type: ckan
+    identifier: DynamicBatteryStorage
+
+  # Dependencies for CryoEngines
+  - type: ckan
+    identifier: B9PartSwitch
+  - type: ckan
+    identifier: CryoTanks
+  - type: ckan
+    identifier: DeployableEngines
+
   # Dependencies for RealSolarSystem
   - type: ckan
     identifier: Kopernicus
@@ -64,23 +68,79 @@ packages:
     identifier: RSSTextures2048
 
   # Dependencies for TACLS
-  # - type: ckan
-  #   identifier: BackgroundResources
+  - type: ckan
+    identifier: BackgroundResources
+
+  # Dependencies for NearFutureElectrical
+  - type: ckan
+    identifier: NearFutureElectrical-Core
+
+  # Dependencies for NearFutureSolar
+  - type: ckan
+    identifier: NearFutureSolar-Core
+
+  # Dependencies for NearFutureSpacecraft
+  - type: ckan
+    identifier: NearFutureProps
+
+  # Dependencies for SXTContinued
+  - type: ckan
+    identifier: FirespitterResourcesConfig
+  - type: ckan
+    identifier: RetractableLiftingSurface
 
   # Suggestions (partial) for RealismOverhaul
   # - type: ckan
   #   identifier: ProceduralFairings-ForEverything
+  - type: ckan
+    identifier: DeadlyReentry
+  - type: ckan
+    identifier: HangerExtenderExtended
   # - type: ckan
-  #   identifier: ProceduralParts
+  #   identifier: MechJeb2
+  - type: ckan
+    identifier: ProceduralParts
+  - type: ckan
+    identifier: CryoEngines
+  - type: ckan
+    identifier: PersistentRotation
   # - type: ckan
-  #   identifier: PersistentRotation
+  #   identifier: ForgottenRealEngines
+  - type: ckan
+    identifier: RCSBuildAidCont
+  - type: ckan
+    identifier: RealSolarSystem
+  - type: ckan
+    identifier: RealismOverhaulCraftFiles
+  - type: ckan
+    identifier: RemoteTech
+  - type: ckan
+    identifier: TACLS
+  - type: ckan
+    identifier: NearFutureConstruction
+  - type: ckan
+    identifier: NearFutureElectrical
+  - type: ckan
+    identifier: NearFuturePropulsion
+  - type: ckan
+    identifier: NearFutureSolar
+  - type: ckan
+    identifier: NearFutureSpacecraft
+  - type: ckan
+    identifier: RealScaleBoosters
+  - type: ckan
+    identifier: AntaresCygnus
   # - type: ckan
-  #   identifier: RCSBuildAid
-  # - type: ckan
-  #   identifier: RealSolarSystem
-  # - type: ckan
-  #   identifier: RealismOverhaulCraftFiles
-  # - type: ckan
-  #   identifier: RemoteTech
-  # - type: ckan
-  #   identifier: TACLS
+  #   identifier: SpaceShuttleSystem
+  - type: ckan
+    identifier: SXTContinued
+  - type: ckan
+    identifier: Taerobee
+  - type: ckan
+    identifier: NewTantares
+  - type: ckan
+    identifier: NewTantaresLV
+  - type: ckan
+    identifier: RealEngines
+  - type: ckan
+    identifier: UniversalStorage
